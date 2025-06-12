@@ -1,0 +1,480 @@
+body{
+    margin:20px;
+}
+
+header {
+  background-color:  #f9f9f9; /* Soft pink */
+}
+
+.logo {
+    width: 8%;
+    height: 8%
+}
+
+.title{
+    font-style: italic;
+    margin-left: -350px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #d81b60;
+}
+
+.heroBanner{
+    width:95%;
+    height:500px;
+    background-color: #f1d1d6;
+    border-color: #333;
+    border-right:10px;
+    border-bottom:10px;
+    border-style:outset;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 50px;
+    margin-left: 2.5%;
+    margin-right: 2.5%; 
+    align-content: center;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.content{
+    /*background-color: #333;
+    width:1200px;
+    margin-left:120px;
+    align-content: center;*/
+    width:700px;
+    height:200px;
+    border-radius: 30px 30px 30px 30px;
+    margin-left: 150px;
+    margin-right: 2.5%;
+    align-content: center;
+    /*position: relative;*/
+    z-index: 2;
+    animation: Hero-align 2s ease-out 0.2s forwards;
+}
+
+.bottleLogo{
+    /*width:100px;
+    height:100px;
+    align-self: right;
+    background-color: #d81b60;*/
+    width: 200px;
+    height:200px;
+    border-radius: 30px 30px 30px 30px;
+    margin-top:-170px;
+    margin-left: 125%;
+    margin-right: 2.5%;
+    align-content: center;
+
+}
+
+.bottleImage{
+    width:100%;
+    height:100%;
+}
+
+button{
+    width:200px;
+    height:50px;
+    font-style: oblique;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color:#f5e6e8;
+    position: relative;
+    z-index: 2;
+}
+
+.bev {
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    opacity: 0;
+}
+  
+.throw1 {
+    top: -500px;
+    left: -30px;
+    animation: throwBev 2s ease-out 0.2s forwards;
+}
+  
+.throw2 {
+    top: -200px;
+    left: 530px;
+    animation: throwBev 2s ease-out 0.4s forwards;
+}
+  
+.throw3 {
+    top: -120px;
+    right: 200px;
+    animation: throwBev 2s ease-out 0.6s forwards;
+}
+
+.throw4 {
+    top: -100px;
+    left: 100px;
+    animation: throwBev 2s ease-out 0.8s forwards;
+}
+  
+.throw5 {
+    top: -500px;
+    left: 450px;
+    animation: throwBev 2s ease-out 1.0s forwards;
+}
+  
+.throw6 {
+    top: -380px;
+    right: 450px;
+    animation: throwBev 2s ease-out 0.0s forwards;
+}
+
+.throw7 {
+    top: -400px;
+    right: 50px;
+    animation: throwBev 2s ease-out 0.6s forwards;
+}
+
+  
+@keyframes throwBev {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(500px) rotate(360deg);
+    }
+}
+
+@keyframes Hero-align{
+    0%{
+        transform: translateX(-500px);
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+.About{
+    width:95%;
+    height:500px;
+    background-color: #8ca1a1;
+    border-color: #333;
+    border-right:10px;
+    border-bottom:10px;
+    border-style:outset;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 50px;
+    margin-left: 2.5%;
+    margin-right: 2.5%; 
+    align-content: center;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.About-content{
+    /*background-color: #333;
+    width:1200px;
+    margin-left:120px;
+    align-content: center;*/
+    width:700px;
+    height:300px;
+    border-radius: 30px 30px 30px 30px;
+    align-content: center;
+    margin-left: 45%;
+    margin-right:2.5%;
+    /*position: relative;*/
+    z-index: 2;
+    animation:About-align 2s ease-out 0.2s forwards;
+   
+}
+
+.background-video{
+    border-radius: 20px;
+    margin-top: -35%;
+    margin-left:-80%;
+    width:490px;
+    height:280px;
+}
+
+@keyframes About-align{
+    0%{
+        transform: translateX(500px);
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+.Product{
+    width:95%;
+    height:500px;
+    background-color: #ceeabc;
+    border-color: #333;
+    border-right:10px;
+    border-bottom:10px;
+    border-style:outset;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 50px;
+    margin-left: 2.5%;
+    margin-right: 2.5%; 
+    align-content: center;
+    align-items: center;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.Product-Content{
+    width:95%;
+    height:90%;
+    margin-left: 35px;
+    align-content: center;
+}
+
+.Product-1{
+    width:25%;
+    height:80%;
+    background-color: #ece5e6;
+    align-content:center;
+    margin-left: 5%;  
+    margin-top: 1%;  
+    border-radius: 20px;
+    border-color: #333;
+    border-right: 10px;
+    border-bottom:10px;
+    border-style:outset;
+    position: relative;
+    overflow: hidden;
+}
+
+.Product-1-Image{
+    width:70%;
+    height:70%;
+    margin-left: 15%;
+    margin-top: 15%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.Product-2{
+    width:25%;
+    height:80%;
+    background-color: #ece5e6;
+    align-content: center;
+    margin-left: 37.5%;
+    margin-top: -28%;
+    border-radius: 20px;
+    border-color: #333;
+    border-right: 10px;
+    border-bottom:10px;
+    border-style:outset;
+    position: relative;
+    overflow: hidden;
+}
+
+.Product-2-Image{
+    width:50%;
+    height:70%;
+    margin-left: 25%;
+    margin-top: 15%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.Product-3{
+    width:25%;
+    height:80%;
+    background-color: #ece5e6;
+    align-content: center;
+    margin-left: 70%;
+    margin-top: -28%;
+    border-radius: 20px;
+    border-color: #333;
+    border-right: 10px;
+    border-bottom:10px;
+    border-style:outset;
+    position: relative;
+    overflow: hidden;
+}
+
+.Product-3-Image{
+    width:40%;
+    height:70%;
+    margin-left: 35%;
+    margin-top: 15%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.Product-1-Description{
+    width:80%;
+    height:90%;
+    align-content: center;
+    margin-left: 10%;
+    margin-top: -90%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.Product-2-Description{
+    width:80%;
+    height:90%;
+    align-content: center;
+    margin-left: 10%;
+    margin-top: -90%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.Product-3-Description{
+    width:80%;
+    height:90%;
+    align-content: center;
+    margin-left: 10%;
+    margin-top: -90%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.Product-1:hover .Product-1-Image{
+    opacity:0;
+}
+
+.Product-1:hover .Product-1-Description{
+    opacity:1;
+}
+
+.Product-2:hover .Product-2-Image{
+    opacity:0;
+}
+
+.Product-2:hover .Product-2-Description{
+    opacity:1;
+}
+
+.Product-3:hover .Product-3-Image{
+    opacity:0;
+}
+
+.Product-3:hover .Product-3-Description{
+    opacity:1;
+}
+
+.Contact{
+    width:95%;
+    height:500px;
+    background-color: #eae6bc;
+    border-color: #333;
+    border-right:10px;
+    border-bottom:10px;
+    border-style:outset;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 50px;
+    margin-left: 2.5%;
+    margin-right: 2.5%; 
+    align-content: center;
+    align-items: center;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.Contact-Form{
+    background-color: #fcfbfb;
+    border-color: #333;
+    border-right:10px;
+    border-bottom:10px;
+    border-style:outset;
+    width:80%;
+    height:200%;
+    margin-left: 60%;
+    margin-top: -38%;
+    align-content: center;
+    border-radius: 20px;
+}
+
+.name{
+    font-size: 30px;
+    margin-top:10%;
+    margin-left:15%;
+    align-content: center;
+}
+
+.email{
+    font-size: 30px;
+    margin-top:5%;
+    margin-left:15%;
+    align-content: center;
+}
+
+.message{
+    font-size: 30px;
+    margin-top:5%;
+    margin-left:15%;
+    align-content: center;
+}
+
+.Contact-Form button{
+    margin-left:30%;
+    margin-top:5%;
+}
+
+#thanks-text{
+    /*background-color: #fcfbfb;
+    border-right:10px;
+    border-bottom:10px;
+    border-style:outset;*/
+    width:100%;
+    height:100%;
+    margin-left: 5%;
+    margin-top: -22%;
+    align-content: center;
+    border-radius: 20px;
+    transition: opacity 0.1s ease-in-out;
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+}
+
+.Contact-Content{
+    width:700px;
+    height:200px;
+    border-radius: 30px 30px 30px 30px;
+    margin-left: 150px;
+    margin-right: 2.5%;
+    align-content: center;
+    position: relative;
+    z-index: 2;
+    animation: Hero-align 2s ease-out 0.2s forwards;
+}
+
+.Contact-Background img{
+    width:30%;
+    height:80%;
+    margin-left:20%;
+}
+
+.Contact-Background h1{
+    font-size:30px;
+    margin-left:10%;
+}
+
+.Contact-Background h2{
+    margin-left:-2%;
+}
+
+#thanks-text.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#form.hide{
+    display: none;  
+}

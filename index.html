@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Kyara Beverages</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <header>
+            <div style="display: flex; align-items: center; justify-content: space-between; padding: 10px 80px;">
+                <img class="logo" src="Images/logo.png" alt="Kyara Logo"/>
+                <h1 class="title">Kyara Beverages</h1>
+                    
+                <nav>
+                    <ul style="list-style: none; display: flex; gap: 120px; margin: 0; padding: 0;">
+                    <li><a href="#heroBanner">Hero Banner</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Product">Products</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+          </header>
+
+        <section class="heroBanner" id="heroBanner">
+            <img src="Images/Beverage-1.png" class="bev throw1">
+            <img src="Images/Beverage-2.png" class="bev throw2">
+            <img src="Images/Beverage-3.png" class="bev throw3">
+            <img src="Images/Beverage-4.png" class="bev throw4">
+            <img src="Images/Beverage-5.png" class="bev throw5">
+            <img src="Images/Beverage-6.png" class="bev throw6">
+            <img src="Images/Beverage-7.png" class="bev throw7">
+
+
+            <div class="content">
+                <h1 style="font-size: 40px;">Refreshing the Future of Beverages</h1>
+                <h2 style="font-style: italic;">Crafted with care. Delivered with passion.</h2>
+                <div class="bottleLogo">
+                    <img class="bottleImage" src="Images/Bottle-Logo.png">
+                </div>
+                <button>Explore Products</button>
+            </div>
+        </section>
+
+        <section class="About" id="About">
+            <div class="About-content">
+                <h1 style="font-size: 40px;">At Kyara,</h1>
+                <h2 style="font-style: italic;">We believe refreshment is an experience.</h2>
+                <h2 style="font-style: italic;">Our mission is to deliver beverages that not only quench your thirst but also energize your spirit. With a fusion of flavor, freshness, and innovation, we’re redefining the way you hydrate.</h2>
+                <video autoplay muted loop playsinline class="background-video">
+                    <source src="Videos/Drink.mp4" type="video/mp4">
+                    Your browser doesn't support Video tag
+                </video>
+            </div>
+        </section>
+
+        <section class="Product" id="Product">
+            <div class="Product-Content">
+                <div class="Product-1">
+                    <img class="Product-1-Image" src="Images/Beverage-2.png">
+                    <div class="Product-1-Description">
+                        <img src="Images/Beverage-2.png" style="width:30%; height:30%; margin-left: 35%; margin-top:5%">
+                        <h1 style="font-size: 25px; margin-left: 18%; margin-top: 10%;">Citrus Iced Tea</h1>
+                        <h2 style="font-size: 20px; margin-left: 5%;">Cool, refreshing, and zesty!</h2>
+                        <h3 style="font-size:15px; font-style: italic;">A bold black tea served chilled with fresh lime slices, mint leaves, and ice cubes. This invigorating beverage is perfect for sunny days and complements any meal with its crisp, citrusy kick.</h3>
+                    </div>
+                </div>
+
+                <div class="Product-2">
+                    <img class="Product-2-Image" src="Images/Beverage-3.png">
+                    <div class="Product-2-Description">
+                        <img src="Images/Beverage-3.png" style="width:25%; height:30%; margin-left: 35%; margin-top:5%">
+                        <h1 style="font-size: 25px; margin-left: 13%; margin-top: 10%;">Mint Lime Sparkle</h1>
+                        <h2 style="font-size: 20px; margin-left: 15%;">Freshness in every sip!</h2>
+                        <h3 style="font-size:15px; font-style: italic;">A vibrant blend of lime wedges, crushed mint, and sparkling water over ice. This detox-inspired drink is crisp, clean, and naturally hydrating—ideal for health-conscious refreshment.</h3>
+                    </div>
+                </div>
+
+                <div class="Product-3">
+                    <img class="Product-3-Image" src="Images/Beverage-7.png">
+                    <div class="Product-3-Description">
+                        <img src="Images/Beverage-7.png" style="width:20%; height:30%;  margin-left: 40%; margin-top:5%">
+                        <h1 style="font-size: 25px; margin-left: 18%; margin-top: 10%;">Oreo Milkshake</h1>
+                        <h2 style="font-size: 20px; margin-left: 20%;">Dessert in a glass!</h2>
+                        <h3 style="font-size:15px; font-style: italic;">A creamy, indulgent blend of vanilla ice cream, crushed Oreos, and chocolate drizzle, topped with whipped cream and served with a classic striped straw. A perfect sweet treat to chill out.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Contact" id="Contact">
+            <div class="Contact-Content">
+                <h1 style="font-size: 40px;">Contact Us</h1>
+                <h2 style="font-style: italic;">We'd love to hear from you!</h2>
+
+                <form class="Contact-Form">
+                    <div class="info" id="form">
+                        <div class="name">
+                            <label for="name">Full Name  </label>
+                            <input style="margin-left: 7%; border-radius: 10px;" type="text" id="name" name="name" required/><br>
+                        </div>
+
+                        <div class="email">
+                            <label for="email" style="margin-left: 5%;">Email  </label>
+                            <input style="margin-left: 14%; border-radius: 10px;" type="text" id="email" name="email" required/><br>
+                        </div>
+
+                        <div class="message">
+                            <label for="message">Message  </label>
+                            <textarea style="margin-left: 12%; border-radius: 10px;"  rows="5" id="message" name="message" required></textarea><br>
+                        </div>
+
+                        <button id="submit-btn">Submit</button>
+                    </div>
+                    <div class="Contact-Background" id="thanks-text">
+                        <img src="Images/Cheers.png">
+                        <h1>Thanks for reaching out!</h1>
+                        <h2 style="font-style: italic;"> We’ll sip on your message and get back to you soon.</h2>
+                    </div>
+                </form>
+
+                <script>
+                            const submitBtn = document.getElementById("submit-btn");
+                            const thanksText = document.getElementById("thanks-text");
+                            const form = document.getElementById("form");
+
+                            submitBtn.addEventListener("click", function (e) {
+                                e.preventDefault(); // Prevent form from refreshing the page
+
+                                // Hide the form, show thanks message
+                                form.classList.add("hide");
+                                thanksText.classList.add("show");
+
+                                // Bring back form after 3s
+                                setTimeout(() => {
+                                thanksText.classList.remove("show");
+                                form.classList.remove("hide");
+                                }, 3000);
+                            });
+                        </script>
+            </div>           
+        </section>
+    </body>
+</html>
